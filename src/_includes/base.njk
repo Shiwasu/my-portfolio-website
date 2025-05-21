@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title> {# This will use the title from your .md files #}
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>{{ title }}</h1>
+    </header>
+    <main>
+      {{ content | safe }} {# This is where your Markdown content will go #}
+    </main>
+    <footer>
+      <p>&copy; {% set currentYear = new Date().getFullYear() %}{{ currentYear }} Your Name</p>
+    </footer>
+  </body>
+</html>
