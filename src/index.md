@@ -1,5 +1,5 @@
 ---
-title: adventure time
+title: Adventure Time
 layout: base.njk
 ---
 
